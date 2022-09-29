@@ -8,6 +8,8 @@
   --secondary-background-color: #f5f4fa;
   --last-text-color: rgba(255, 255, 255, 0.6);
   --b-a-c: #188ce8;
+  --t-b-color: #c4c4c4;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -95,12 +97,6 @@ ul {
   gap: 50px;
 }
 
-/* another method !!!!*/
-/* .head-item + .head-item {
-  margin-left: 50px;
-} */
-/* /* another method !!!! */
-
 .main-nav-item {
   display: block;
 
@@ -125,9 +121,6 @@ ul {
   margin-left: auto;
   gap: 50px;
 }
-/* .ha-adress + .ha-adress {
-  margin-left: 50px;
-} */
 
 .current {
   color: var(--active-text-color);
@@ -151,9 +144,22 @@ ul {
 /* ------------------main styles--------------------- */
 
 .hero {
-  background-color: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-color: var(--t-b-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .headline {
@@ -195,17 +201,32 @@ ul {
 .benefit {
   padding-top: 94px;
 }
-.priorities {
+
+.prioritie {
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
+}
+.priorities {
   padding-left: 0;
   display: flex;
   gap: 30px;
 }
 
-.priorities li {
+.pri-disc {
   width: 270px;
+}
+.icon-cont {
+  background-color: var(--secondary-background-color);
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.pri-disc-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .benefit-item {
@@ -251,7 +272,7 @@ ul {
   display: flex;
   gap: 30px;
 }
-.our-team-list li {
+.our-team-list > li {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -276,6 +297,69 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+.mem-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.mem-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.mem-link:hover,
+.mem-link:focus {
+  color: var(--white-color);
+  background-color: var(--active-text-color);
+}
+.mem-l-l {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.our-clients {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.list-link {
+  color: var(--icon-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-link:hover,
+.list-link:focus {
+  color: var(--active-text-color);
+  border: 1px solid var(--active-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.client-logo {
+  fill: currentColor;
 }
 
 /* --------------------------------footer styles----------------------------------- */
