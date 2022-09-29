@@ -49,8 +49,7 @@ ul {
 /* class container для div который будет оборачивать контент секции */
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   /* outline: 1px solid tomato; */
   width: 1200px;
   padding-left: 15px;
@@ -431,6 +430,55 @@ ul {
 .our-team-list {
   padding-left: 0;
 }
+.footer-block {
+  display: flex;
+  align-items: baseline;
+  gap:70px;
+
+}
+.joined {
+  margin: 0;
+  padding:0;
+}
+.join-us {
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+color:var(--white-color);
+}
+
+.footer-links {
+display:flex;
+justify-content: center;
+gap: 10px;
+margin:0;
+padding:0;
+}
+.footer-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:  var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--active-text-color);
+}
+
+.foot-icon {
+  width:20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* -------------------------portfolio styles-------------------------- */
 
 .our-works {
@@ -487,25 +535,32 @@ ul {
   padding-left: 0;
   gap: 30px;
 }
-
+/* 
 .f-w-item {
-  /* width: 370px; */
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
-  max-width: calc((100%-60px) / 3);
-}
-.f-w-item:hover,
+  
+  width: 370px;;
+} */
+/* .f-w-item:hover,
 .f-w-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
+.filter-link {
+  text-decoration: none;
+  display: block;
+}
+.filter-link:hover,
+.filter-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .border-discription {
   /* outline: 1px solid tomato; */
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  padding: 20px 24px;
+  padding: 20px 23px 20px 23px;
 }
 
 .example {
